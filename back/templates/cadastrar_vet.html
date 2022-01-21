@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Cadastro de dono</title>
+</head>
+
+<body>
+    <h2>Dados do Veterinario</h2>
+    <form method="post" action="/incluir_vet">
+        <!-- Nome do Vet -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+        <!-- CEP -->
+        <label for="cep">CEP:</label>
+        <input type="number" min="1" max="99999999" id="cep" name="cep" required><br>
+        <!-- Número de Endereço -->
+        <label for="numero">Número:</label>
+        <input type="number" min="1" max="9999" id="numero" name="numero"><br>
+        <!-- Complemento Endereço -->
+        <label for="compl">Complemento:</label>
+        <input type="text" min="1" max="99999999999" id="compl" name="compl"><br>
+        <!-- Telefone Fixo p/ Contato -->
+        <label for="fixo">Telefone Fixo:</label>
+        <input type="number" min="1" max="99999999999" id="fixo" name="fixo"><br>
+        <!-- Número Celular -->
+        <label for="celular">Celular:</label>
+        <input type="number" min="1" max="99999999999" id="celular" name="celular"><br>
+        <!-- Número p/ emergência -->
+        <label for="emerg">Número Emergencial:</label>
+        <input type="number" min="1" max="99999999999" id="emerg" name="emerg"><br>
+
+        <h2>Dados do Consultorio</h2>
+        <!-- CEP Consultorio-->
+        <label for="cepC">CEP:</label>
+        <input type="number" min="1" max="99999999" id="cepC" name="cepC" required><br>
+        <!-- Número de Endereço Consultorio -->
+        <label for="numeroC">Número:</label>
+        <input type="number" min="1" max="9999" id="numeroC" name="numeroC"><br>
+        <!-- Complemento Endereço Consultorio -->
+        <label for="complC">Complemento:</label>
+        <input type="text" min="1" max="99999999999" id="complC" name="complC"><br>
+        <!-- Sala -->
+        <label for="sala">CEP:</label>
+        <input type="number" min="1" max="99999999" id="sala" name="sala" required><br>
+
+        <input type="submit" value="Incluír">
+    </form>
+
+    <br><a href="/">Voltar</a>
+</body>
+
+</html>
